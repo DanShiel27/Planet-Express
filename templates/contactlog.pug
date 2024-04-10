@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link#stylesheet(href='/resources/css/main.dark.css', rel='stylesheet')
+    script(src='/resources/js/main.js')
+    script(src='/resources/js/table.js')
+    title Planet Express, Inc.
+  body
+    include nav.pug
+    h1 My Contacts and Apointments
+    .form
+        div
+            label(for='saleInput') sale message: 
+            input#saleInput(type='text', name='saleInput')
+        div
+            button#setSale Set
+        div
+            button#deleteSale Delete
+    table
+        tr
+            th Name
+            th Email
+            th Date
+            th Time Until
+            th Service
+            th Danger?
+            th Delete?
+        if contacts.length>0
+            each contact in contacts 
+                tr(id= "t" + contact[5])
+                    td #{contact[0]}
+                    td
+                        a(href='mailto:' + contact[1]) #{contact[1]}
+                    td(id= "date" + contact[5]) #{contact[2]}
+                    td.until
+                    td #{contact[3]}
+                    td #{contact[4]}
+                    td
+                        button(id= contact[5]) Delete

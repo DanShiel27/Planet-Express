@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link#stylesheet(href='/resources/css/main.dark.css', rel='stylesheet')
+    script(src='/resources/js/main.js')
+    script(src='/resources/js/contact.js')
+    title Planet Express, Inc.
+  body
+    include nav.pug
+    h1 Schedule a Consultation
+    .form
+        form(action='/contact', method='POST')
+            div
+                label(for='name') Name: 
+                input#name(type='text', name='name', required='')
+            div
+                label(for='email') Email:
+                input#email(type='email', name='email', required='')
+            div
+                label(for='date') Date:
+                input#date(type='date', name='date')
+            div
+                label(for='option') Delivery Speed
+                select#option(name='option')
+                    option(value='emergency') Emergency: 12 hours
+                    option(value='rapid') Rapid: 48 hours
+                    option(value='standard') Standard: 2 weeks
+                    option(value='discount') Discount: 4 weeks
+            div
+                label(for='check') Significant Danger?
+                input#check(type='checkbox', name='check', value='yes')
+            div
+                label(for='submit') Submit:
+                input#submit(type='submit', name='submit')
+            #price
+                |$1000

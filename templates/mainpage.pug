@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link#stylesheet(href='/resources/css/main.dark.css', rel='stylesheet')
+    script(src='/resources/js/main.js')
+    script(src='/resources/js/sale.js')
+    title Planet Express, Inc.
+  body
+    include nav.pug
+    h1 Planet Express, Inc.
+    h2 Our Crew Is Replaceable, Your Package Isn&apos;t
+    #sale
+      p#message
+    img(src='resources/images/logo.png', alt='Planet Express logo')
+    .main
+      br
+      p
+        | Planet Express is 
+        em the
+        |  premier intergalatic delivery company. Planet Express is owned and operated by Professor
+        |        Hubert J. Fansworth and was founded in 2961. Planet Express is known for its 
+        strong great
+        |  customer service.
+      p
+        | This wonderful company offers competitive rates and will deliver to anywhere in the known universe.
+        | Our current rates are as follows:
+      ol
+        li
+          | Emergency, within 12 hours: 100,000
+        li
+          | Rapid, within 48 hours: 10,000
+        li
+          | Standard, within 2 weeks: 1,000
+        li
+          | Discount, within 4 weeks: 500
+      p
+        | All rates are negotiable
+        br

@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link#stylesheet(href='/resources/css/main.dark.css', rel='stylesheet')
+    script(src='/resources/js/main.js')
+    title Planet Express, Inc.
+  body
+    include nav.pug
+    h1 Testimonies
+    .video
+        iframe(width='560', height='315', src='https://www.youtube.com/embed/MdTSvC1ed6E?si=CbkG5eqr8st3EerL', title='YouTube video player', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen='')
+    .column
+        .review
+            p.review-body
+                | We recieved all of our glorious lug nuts, and had a great time with Bender!
+            p.reviewer-name
+                | -Robots of Chapek 9
+        .review
+            p.review-body
+                | I finally got my sign saying &quot;Please Don&apos;t Drink the Emperor&quot; and had a great time beating up fry!
+            p.reviewer-name
+                | -Emperor Bont
+        .review
+            p.review-body
+                | I recieved the Ceremonial Oversized Scissors well before expected. Too bad I didn&apos;t need them!
+            p.reviewer-name
+                | -Zapp Brannigan of DOOP
+    .column
+        .review
+            p.review-body
+                | The crew of Planet Express worked very hard to deliver our pillows on time!
+            p.reviewer-name
+                | -Management of Hotel Stumbos 4
+        .review
+            p.review-body
+                | I recieved all of the childrens letters on time and with no betrayal what so ever!
+            p.reviewer-name
+                | -Robot Santa Claus

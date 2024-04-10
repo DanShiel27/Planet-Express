@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    background-color: aquamarine;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 250%;
+}
+
+h2{
+    text-align: center;
+    font-size: 150%;
+}
+
+strong {
+    color: white;
+}
+
+em {
+    color: white;
+}
+
+iframe {
+    border: 0px;
+}
+
+#sale {
+    display:none;
+    background-color: rgb(227, 66, 66);
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    font-size: 125%;
+}
+
+#message {
+    text-align: center;
+}
+
+/* figured out how to center an image and copied 3 lines of code from: https://www.w3schools.com/css/css3_images.asp */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+}
+/*figured out how to center a div and copied two lines from: https://www.w3schools.com/css/css_align.asp */
+div.main {
+    background-color: rgb(227, 66, 66);
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    font-size: 125%;
+}
+
+/*got this from the same link as the one above, copied 3 lines of code*/
+div.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: left;
+    width: 50%;
+}
+
+div.column > div.review {
+    background-color: red;
+    border: 3px black solid;
+    flex-grow: 0;
+    width: 95%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 25px;  
+}
+
+p + p.reviewer-name {
+    text-align: right;
+    color: white;
+    font-size: large;
+
+}
+
+div.review > p.review-body {
+    text-align: left;
+    font-size: large;
+    color: black;
+}
+
+div.form {
+    background-color: red;
+    margin: auto;
+    width: 15%;
+    padding: 2%;
+    border-radius: 15%;
+}
+
+table {
+    border: 2px black solid;
+    margin: auto;
+    width: 30%
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+th, td {
+    border: 1px black solid;
+}
+
+
+nav {
+    background-color: darkgreen;
+}
+
+/*all flex box stuff was found from its w3 page, nothing was copied over one line */
+nav ul{
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav li {
+    background-color: rgb(53, 204, 53);
+    border: 1px black solid;
+    text-align: center;
+    flex-grow: 0;
+    flex-basis: 150px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+nav a {
+    font-size: x-large;
+    color: black
+}
+
+nav input {
+    font-size: x-large;
+    background-color: rgb(53, 204, 53);;
+}
+
+nav a:hover {
+    color: red;
+}
+
